@@ -1,18 +1,27 @@
-#><h1>Spring Boot Set Up</h1>
+#<h1>Spring Boot Set Up</h1>
 
 #<h3>1) Create new project</h3>
 
 Go to https://start.spring.io/ 
+
 fill the form
+
 Project : maven or gradle any what you want.
+
 Language : java
+
 Spring Boot : 2.1.8
 
 Group : com.setup (your project name) 
+
 Artifact : setup(your short project name) 
+
 Dependencies : Spring Web , Spring Data JPA,  MySql Driver
+
 Now Click on Generate the project Button
+
 Then it will download the project
+
 unzip it and import on IDE
 
 #<h3>2) Import/Open on Intellij IDE</h3>
