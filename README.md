@@ -34,14 +34,17 @@ Then it will take few minutes to downloads the dependencies
 #<h3>3) Database Config</h3>
 
 Got to src/main/resources/application.properties and open it.
+
 Write following :
-spring.datasource.url=jdbc:mysql://localhost:3306/setup
+
+	spring.datasource.url=jdbc:mysql://localhost:3306/setup
 	spring.datasource.username=dhiraj
 	spring.datasource.password=
 
 	spring.jpa.hibernate.ddl-auto=update
 	spring.jpa.show-sql=false
 	spring.datasource.platform=SELECT 1
+	
 Create Database setup on Mysql.
 
 #<h3>4) Web Config</h3>
