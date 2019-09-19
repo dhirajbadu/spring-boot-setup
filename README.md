@@ -51,17 +51,22 @@ Create Database setup on Mysql.
 
 Got to src/main/resources/application.properties and open it.
 Write following :
-server.port=8081
-spring.mvc.view.prefix=/pages/
+
+	server.port=8081
+	spring.mvc.view.prefix=/pages/
 	spring.mvc.view.suffix=.jsp
 	spring.resources.static-locations=classpath:/resources/
 	logging.level.org.springframework=TRACE
 	logging.level.com=TRACE
 
 Inside main package/directory create new directory i.e.   webapp
+
 Inside webapp   directory create new  directory i.e. pages
+
 Inside webapp   directory create new  directory i.e.  resources
+
 Inside resources directory create new directories for js, css, img etc. and add required files like bootstrap.min.css etc.
+
 Now inside pages  directory create new jsp file as index.jsp with Hello world World text
 
 #<h3>5) Add Required Dependencies</h3>
@@ -70,29 +75,30 @@ Open pom.xml incase of maven
 add <packaging>jar</packaging>
 add following  dependencies
 
-<dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-          <scope>compile</scope>
-</dependency>
+	<dependency>
+          	<groupId>org.springframework.boot</groupId>
+          	<artifactId>spring-boot-starter-tomcat</artifactId>
+          	<scope>compile</scope>
+	</dependency>
        
-<dependency>
-          <groupId>org.apache.tomcat.embed</groupId>
-          <artifactId>tomcat-embed-jasper</artifactId>
-          <scope>compile</scope>
-</dependency>
+	<dependency>
+          	<groupId>org.apache.tomcat.embed</groupId>
+          	<artifactId>tomcat-embed-jasper</artifactId>
+          	<scope>compile</scope>
+	</dependency>
       
-<dependency>
-           <groupId>commons-logging</groupId>
-           <artifactId>commons-logging</artifactId>
-           <version>1.2</version>
-</dependency>
+	<dependency>
+           	<groupId>commons-logging</groupId>
+           	<artifactId>commons-logging</artifactId>
+           	<version>1.2</version>
+	</dependency>
       
-<dependency>
-         <groupId>javax.servlet</groupId>
-         <artifactId>jstl</artifactId>
-         <version>1.2</version>
-</dependency>
+	<dependency>
+         	<groupId>javax.servlet</groupId>
+         	<artifactId>jstl</artifactId>
+         	<version>1.2</version>
+	</dependency>
+	
        
 Refresh the maven 
 
@@ -101,7 +107,7 @@ Go to src/main/java/com/setup/setup/ and create new package controller.
 Inside that controller package create new class IndexController.java.
 Inside that class write following codes:
 
-package com.setup.setup.controller;
+	package com.setup.setup.controller;
 	import org.springframework.stereotype.Controller;
 	import org.springframework.web.bind.annotation.GetMapping;
 
